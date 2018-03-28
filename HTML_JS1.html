@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ 
+
+</head>
+<body onload="myWin()">
+	<div id = "did">
+		<button id = "bid" onclick="stopWin()">按钮</button>
+	</div>
+	<p id="pid"></p>
+	<!-- <script >
+		function fun(){
+			alert("最基本事件处理");	
+		}
+	</script> -->
+	<!-- <script type="text/javascript">
+		var btn1 = document.getElementById("bid");
+		btn1.onclick = function () {
+			alert("0级处理事件1");
+		}
+		btn1.onclick = null;
+		btn1.onclick = function () {
+			alert("0级处理事件2");
+		}
+	</script> -->
+	<!-- <script type="text/javascript">
+		var btn1 = document.getElementById("bid").
+		addEventListener("click", fun1);
+		addEventListener("click", fun2);
+		function fun1(){
+			alert("二级处理事件1")
+		}
+		function fun2(){
+			alert("二级处理事件2")
+		}
+	</script> -->
+	<!-- <script type="text/javascript">
+		var mytime = setInterval(function() {
+			getTime();
+		}, 1000);
+		function getTime() {
+			var d = new Date();
+			var t = d.toLocaleTimeString();
+			document.getElementById("pid").innerHTML = t;
+		} -->
+		<script type="text/javascript">
+			var m;
+			function myWin(){
+				alert("hello");
+				m = setTimeout(function() {
+					myWin();
+				}, 3000)
+			}
+			function stopWin() {
+				clearTimeout(m);
+				
+			}
+		</script>
+		
+	</script>
+	
+		
+</body>
+</html>
