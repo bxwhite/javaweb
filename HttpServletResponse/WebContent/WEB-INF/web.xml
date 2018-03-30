@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>HttpServletResponse</display-name>
+  <servlet>
+    <servlet-name>Pwriter_Ostream</servlet-name>
+    <servlet-class>com.bai.servlet.Pwriter_Ostream</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Pwriter_Ostream</servlet-name>
+    <url-pattern>/Pwriter_Ostream</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>FileUpload</servlet-name>
+    <servlet-class>com.bai.servlet.FileUpload</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FileUpload</servlet-name>
+    <url-pattern>/FileUpload</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DrawImage</servlet-name>
+    <servlet-class>com.bai.servlet.DrawImage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DrawImage</servlet-name>
+    <url-pattern>/DrawImage</url-pattern>
+  </servlet-mapping>
+</web-app>
